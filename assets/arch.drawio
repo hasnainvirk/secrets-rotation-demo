@@ -1,0 +1,46 @@
+<mxfile host="65bd71144e" scale="4" border="0">
+    <diagram id="cvHLuZT9w-8RJRUQKwPV" name="Page-1">
+        <mxGraphModel dx="696" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Region" style="sketch=0;outlineConnect=0;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;verticalAlign=top;align=left;spacingLeft=30;dashed=1;strokeColor=#66B2FF;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="420" width="1070" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Availability Zone" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="460" width="1020" height="530" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="VPC" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#248814;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="490" width="980" height="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Public subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#248814;fillColor=#E9F3E6;verticalAlign=top;align=left;spacingLeft=30;fontColor=#248814;dashed=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="4">
+                    <mxGeometry x="430" y="10" width="506" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Private Isolated subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#147EBA;fillColor=#E6F2F8;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="4">
+                    <mxGeometry x="430" y="190" width="510" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Security group&#10;(bastion_sg)" style="fillColor=none;strokeColor=#00CC66;verticalAlign=top;fontStyle=0;fontColor=#268813;rounded=0;" vertex="1" parent="4">
+                    <mxGeometry x="776" y="20" width="134" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Bastion Host" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="4">
+                    <mxGeometry x="813" y="80" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="MySQL" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9933;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.aurora_instance;" vertex="1" parent="4">
+                    <mxGeometry x="813" y="270" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Security group&#10;(lambda_sg_https)" style="fillColor=none;strokeColor=#dd22d6;verticalAlign=top;fontStyle=0;fontColor=#DD3522;" vertex="1" parent="4">
+                    <mxGeometry x="40" y="250" width="540" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="SecretsManager &lt;br&gt;VPC Endpoint" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.endpoints;" vertex="1" parent="4">
+                    <mxGeometry x="80" y="265.5" width="69" height="69" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Lambda Function" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;strokeColor=#66B2FF;" vertex="1" parent="4">
+                    <mxGeometry x="490" y="269" width="60" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Security group&#10;(lambda_sg_db)" style="fillColor=none;strokeColor=#2238dd;verticalAlign=top;fontStyle=0;fontColor=#222fdd;rounded=0;glass=0;" vertex="1" parent="4">
+                    <mxGeometry x="440" y="241" width="460" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
